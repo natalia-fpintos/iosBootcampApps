@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:meow.m4a">
+   </FileRef>
+   <FileRef
+      location = "group:moo.m4a">
+   </FileRef>
+   <FileRef
+      location = "group:SimpleSound.swift">
+   </FileRef>
+   <FileRef
+      location = "group:woof.m4a">
+   </FileRef>
+   <FileRef
+      location = "self:AnimalFarm.xcodeproj">
+   </FileRef>
+</Workspace>

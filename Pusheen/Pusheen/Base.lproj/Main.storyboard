@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pusheen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="d8i-fH-yKg">
+                                <rect key="frame" x="64" y="145" width="247" height="83"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4Y-TJ-fhX">
+                                <rect key="frame" x="281" y="502" width="30" height="30"/>
+                                <state key="normal" title="🦖"/>
+                                <connections>
+                                    <action selector="displayPusheenosaurus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o4g-8d-A0S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xiu-0M-F4U">
+                                <rect key="frame" x="64" y="502" width="30" height="30"/>
+                                <state key="normal" title="🐈"/>
+                                <connections>
+                                    <action selector="displayPusheen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cJm-Cq-RQL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the emojis!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4My-Ex-JzR">
+                                <rect key="frame" x="20" y="353" width="335" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ost-ag-Qw6">
+                                <rect key="frame" x="171" y="502" width="33" height="30"/>
+                                <state key="normal" title="🌸"/>
+                                <connections>
+                                    <action selector="displayFlowers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nnv-gi-9EI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d4Y-TJ-fhX" firstAttribute="leading" secondItem="ost-ag-Qw6" secondAttribute="trailing" constant="77" id="7I2-s0-tY7"/>
+                            <constraint firstItem="Xiu-0M-F4U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="7n5-z1-WKA"/>
+                            <constraint firstItem="ost-ag-Qw6" firstAttribute="top" secondItem="4My-Ex-JzR" secondAttribute="bottom" constant="125" id="7tU-yz-Kfr"/>
+                            <constraint firstItem="Xiu-0M-F4U" firstAttribute="top" secondItem="4My-Ex-JzR" secondAttribute="bottom" constant="125" id="S7C-uL-9rk"/>
+                            <constraint firstItem="d4Y-TJ-fhX" firstAttribute="top" secondItem="4My-Ex-JzR" secondAttribute="bottom" constant="125" id="W5X-ov-iJH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4My-Ex-JzR" secondAttribute="trailing" constant="20" id="ZTU-gh-mrX"/>
+                            <constraint firstItem="d8i-fH-yKg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="e6C-1j-DrE"/>
+                            <constraint firstItem="4My-Ex-JzR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hm7-mg-xCK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d8i-fH-yKg" secondAttribute="trailing" constant="64" id="iN3-qC-G5r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d4Y-TJ-fhX" secondAttribute="trailing" constant="64" id="kWz-BF-ymu"/>
+                            <constraint firstItem="4My-Ex-JzR" firstAttribute="top" secondItem="d8i-fH-yKg" secondAttribute="bottom" constant="125" id="l07-Kw-KNc"/>
+                            <constraint firstItem="ost-ag-Qw6" firstAttribute="leading" secondItem="Xiu-0M-F4U" secondAttribute="trailing" constant="77" id="rM9-Cj-Iav"/>
+                            <constraint firstItem="d8i-fH-yKg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="xKY-lB-htT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="d8i-fH-yKg" id="6nq-QU-Eid"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="default" width="83" height="83"/>
+    </resources>
+</document>
