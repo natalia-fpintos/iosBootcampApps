@@ -21,20 +21,23 @@ class ViewController: UIViewController {
 
     @IBAction func login(_ sender: UIButton) {
         if username.text != "" && password.text != "" {
-            performSegue(withIdentifier: "homeScreen", sender: "Login")
+            performSegue(withIdentifier: "homeScreen", sender: sender)
         }
     }
     
     @IBAction func forgotDetails(_ sender: UIButton) {
-        performSegue(withIdentifier: "homeScreen", sender: "Forgot")
+        performSegue(withIdentifier: "homeScreen", sender: sender)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print(sender)
         if segue.identifier == "homeScreen" {
-//            if sender == "Login" {
-//                segue.destination.title = username.text
-//            }
+            if let button = sender as? UIButton {
+                if button.titleLabel?.text == "Login" {
+                    segue.destination.title = username.text
+                } else {
+                    segue.destination.title = button.titleLabel?.text
+                }
+            }
         }
     }
     
